@@ -16,7 +16,7 @@ export default function Welcome() {
         <Link href="/" className="link link--background">
           Login
         </Link>
-        <Link href="/" className="link link--border">
+        <Link href="/" className="link">
           Create Account
         </Link>
       </div>

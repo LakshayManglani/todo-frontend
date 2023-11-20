@@ -1,3 +1,12 @@
+:root {
+  --colorPrimary: #181a20;
+  --colorSecondary: #35393f;
+  --colorAccent: #663399;
+  --colorShadow: #00000033;
+  --colorText: #ffffff;
+  --colorTextLight: #575757;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -6,6 +15,8 @@
 
 html {
   max-width: 100%;
+  background-color: var(--colorPrimary);
+  color: var(--colorText);
 }
 
 body {
@@ -22,24 +33,15 @@ a {
 /* Links */
 .link {
   width: 100%;
-  color: white;
+  color: var(--colorText);
   text-align: center;
   padding: 0.7rem;
   border-radius: 0.3rem;
   font-size: larger;
   font-weight: 300;
+  border: 0.15rem solid var(--colorSecondary);
 }
 
 .link--background {
-  background-color: rebeccapurple;
-}
-
-.link--border {
-  border: 0.2rem solid rebeccapurple;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+  background-color: var(--colorAccent);
 }
